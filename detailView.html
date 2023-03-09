@@ -20,7 +20,7 @@
         <button class="tablinks" onclick="openCity(event, 'frequecy')">Frequecy</button>
     </div>
 </div>
-    <div id="basicInfo" class="tabcontent min">
+    <div id="basicInfo" class="tabcontent">
         <div class="newform">
             <table class="newfromTable">
                 <tr>
@@ -80,8 +80,60 @@
 
         </div>
     </div>
-    <div id="frequecy" class="tabcontent min">
-        Test2
+    <div id="frequecy" class="tabcontent ">
+        <div class="newform">
+            <table class="newfromTable">
+                <tr>
+                    <td>
+                        <x>Time</x>
+                        <br>
+                        <input class="inputText" type="time"> </input>
+                    </td>
+                    <td>
+                        <x>Repeat</x>
+                        <br>
+                        <input class="inputText" type="number" min="1">
+
+
+                    </td>
+                </tr>
+
+<tr>
+    <td >
+                        <x>Repeat</x>
+                        <br>
+                        <select class="inputText" type="text">
+
+<option value="Pending Exceeded Budget Notification">Daily</option>
+<option value="Pending Budget Notification">Weekly</option>
+<option value="Budget Rejection">Monthly</option>
+<option value="Budget Reassignment">Year</option>
+
+                    </td>
+                <td>
+                    <x>Repeat On</x>
+                    <br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Monday">Monday </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Tuesday">Tuesday
+                    </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Wednesday">Wednesday Reviewer
+                    </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Thursday">Thursday 
+                    </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Friday">Friday
+                    </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Saturday">Saturday
+                    </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Sunday">Sunday
+                    </input>
+
+                </td>
+
+                </tr>
+            </table>
+
+        </div>
+    </div>
     </div>
 </body>
 </html>
