@@ -167,3 +167,12 @@ a {
 .area {
     min-height: 120px;
 }
+
+.newfromTable
+{
+    background: #F5F8FB;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    box-shadow: 2px 5px 8px 0px #eee;
+}
