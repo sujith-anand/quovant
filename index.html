@@ -13,7 +13,7 @@
 
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')">Notification Configurations</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Schedule Histrory</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Schedule History</button>
     </div>
 
     <div id="London" class="tabcontent">
@@ -301,11 +301,54 @@
     </div>
 
     <div id="Paris" class="tabcontent">
+        <div>
+            <div class="filter">
+                <table>
+                    <tr>
+                        <td>
+                            <x>Configuration Name</x>
+                            <br>
+                            <input class="inputText" type="text"> </input>
+                        </td>
+                        <td>
+                            <x>Client</x>
+                            <br>
+                            <input class="inputText" type="text"> </input>
+                        </td>
+                        <td>
+                            <x>Client Division</x>
+                            <br>
+                            <input class="inputText" type="text"> </input>
+                        </td>
+                        <td>
+                            <x>Last Run On</x>
+                            <br>
+                            <input class="inputText" type="date"> </input>
+                        </td>
+                        <td>
+                            <x>Status</x>
+                            <br>
+                            <select class="inputText" type="text">
+                          <option value="Success">Success</option>
+                        <option value="Failed">Failed</option>
+                        <option value="In Progress">In Progress</option>
+                         </select>
+
+                        </td>
+                        <td style="vertical-align:bottom;">
+                            <button class="primary">Go</button>
+
+
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
      <table id="quovant">
         <tr>
             <th>ConfigurationName</th>
             <th>Template</th>
-            <th>Scheduled Date</th>
+            <th>Last Run on</th>
             <th>Status</th>
             <th>Client</th>
             <th>Client Division</th>
@@ -316,7 +359,7 @@
             <td><a>Invoice Status Update</a></td>
             <td>Invoice Status Update</td>
             <td>02/12/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Amazon</td>
             <td>Workers Comp</td>
             <td>02/12/2023</td>
@@ -326,7 +369,7 @@
             <td><a>Pending Exceeded Budget Notification</a></td>
             <td>Pending Exceeded Budget Notification</td>
             <td>02/13/2023</td>
-            <td>Failed</td>
+            <td style="color:red">Failed</td>
             <td>Petsmart</td>
             <td>General liability</td>
             <td>02/13/2023</td>
@@ -336,7 +379,7 @@
             <td><a>Pending Budget Notification</a></td>
             <td>Pending Budget Notification</td>
             <td>02/14/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>GM</td>
             <td>Workers Comp</td>
             <td>02/14/2023</td>
@@ -346,7 +389,7 @@
             <td><a>Budget Rejection</a></td>
             <td>Budget Rejection</td>
             <td>02/15/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Amazon</td>
             <td>General liability</td>
             <td>02/15/2023</td>
@@ -356,7 +399,7 @@
             <td><a>Budget Reassignment</a></td>
             <td>Budget Reassignment</td>
             <td>02/16/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Petsmart</td>
             <td>Workers Comp</td>
             <td>02/16/2023</td>
@@ -366,7 +409,7 @@
             <td><a>Invoice in Client Review</a></td>
             <td>Invoice in Client Review</td>
             <td>02/17/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>GM</td>
             <td>General liability</td>
             <td>02/17/2023</td>
@@ -376,7 +419,7 @@
             <td><a>Invoice Reassignment</a></td>
             <td>Invoice Reassignment</td>
             <td>02/18/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Amazon</td>
             <td>Workers Comp</td>
             <td>02/18/2023</td>
@@ -386,7 +429,7 @@
             <td><a>Invoices in law firm review</a></td>
             <td>Invoices in law firm review</td>
             <td>02/19/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Petsmart</td>
             <td>General liability</td>
             <td>02/19/2023</td>
@@ -396,7 +439,7 @@
             <td><a>Advanced Case Creation</a></td>
             <td>Advanced Case Creation</td>
             <td>02/20/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>GM</td>
             <td>Workers Comp</td>
             <td>02/20/2023</td>
@@ -406,7 +449,7 @@
             <td><a>Pending Exceeded Budget Notification</a></td>
             <td>Pending Exceeded Budget Notification</td>
             <td>02/21/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Amazon</td>
             <td>General liability</td>
             <td>02/21/2023</td>
@@ -416,7 +459,7 @@
             <td><a>Pending Budget Notification</a></td>
             <td>Pending Budget Notification</td>
             <td>02/22/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Petsmart</td>
             <td>Workers Comp</td>
             <td>02/22/2023</td>
@@ -426,7 +469,7 @@
             <td><a>Budget Rejection</a></td>
             <td>Budget Rejection</td>
             <td>02/23/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>GM</td>
             <td>General liability</td>
             <td>02/23/2023</td>
@@ -436,7 +479,7 @@
             <td><a>Budget Reassignment</a></td>
             <td>Budget Reassignment</td>
             <td>02/24/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Amazon</td>
             <td>Workers Comp</td>
             <td>02/24/2023</td>
@@ -446,7 +489,7 @@
             <td><a>Invoice in Client Review</a></td>
             <td>Invoice in Client Review</td>
             <td>02/25/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>Petsmart</td>
             <td>General liability</td>
             <td>02/25/2023</td>
@@ -456,7 +499,7 @@
             <td><a>Invoice Reassignment</a></td>
             <td>Invoice Reassignment</td>
             <td>02/26/2023</td>
-            <td>Success</td>
+            <td style="color:green">Success</td>
             <td>GM</td>
             <td>Workers Comp</td>
             <td>02/26/2023</td>
@@ -466,7 +509,7 @@
             <td><a>Invoices in law firm review</a></td>
             <td>Invoices in law firm review</td>
             <td>02/27/2023</td>
-            <td>Failed</td>
+            <td style="color:red">Failed</td>
             <td>Amazon</td>
             <td>General liability</td>
             <td>02/27/2023</td>
@@ -476,7 +519,7 @@
             <td><a>Advanced Case Creation</a></td>
             <td>Advanced Case Creation</td>
             <td>02/28/2023</td>
-            <td>Failed</td>
+            <td style="color:red">Failed</td>
             <td>Petsmart</td>
             <td>Workers Comp</td>
             <td>02/28/2023</td>
@@ -486,7 +529,7 @@
             <td><a>Pending Exceeded Budget Notification</a></td>
             <td>Pending Exceeded Budget Notification</td>
             <td>03/01/2023</td>
-            <td>Failed</td>
+            <td style="color:red">Failed</td>
             <td>GM</td>
             <td>General liability</td>
             <td>03/01/2023</td>
@@ -496,7 +539,7 @@
             <td><a>Pending Budget Notification</a></td>
             <td>Pending Budget Notification</td>
             <td>03/02/2023</td>
-            <td>Failed</td>
+            <td style="color:red">Failed</td>
             <td>Amazon</td>
             <td>Workers Comp</td>
             <td>03/02/2023</td>
@@ -506,7 +549,7 @@
             <td><a>Budget Rejection</a></td>
             <td>Budget Rejection</td>
             <td>03/03/2023</td>
-            <td>Failed</td>
+            <td style="color:red">Failed</td>
             <td>Petsmart</td>
             <td>General liability</td>
             <td>03/03/2023</td>
