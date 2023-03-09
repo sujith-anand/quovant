@@ -10,18 +10,77 @@
 </head>
 <body>
     <div class="menu"> Quovant</div>
-    <h2>Notification Manager</h2>
+    <br>
+    <a> ← Back to configuration Page</a>
+    <h2>New Notification Configuration</h2>
 
-    <div class="tab">
+    <div class="tab min">
         <button class="tablinks" onclick="openCity(event, 'basicInfo')">Basic Info</button>
         <button class="tablinks" onclick="openCity(event, 'frequecy')">Frequecy</button>
     </div>
 
-    <div id="basicInfo" class="tabcontent">
-    Test1
+    <div id="basicInfo" class="tabcontent min">
+        <div class="newform">
+            <table>
+                <tr>
+                    <td>
+                        <x>Configuration Name</x>
+                        <br>
+                        <input class="inputText" type="text"> </input>
+                    </td>
+                    <td>
+                        <x>Template</x>
+                        <br>
+                        <select class="inputText" type="text">
+                                <option value="Select">-select-</option>
+<option value="Pending Exceeded Budget Notification">Pending Exceeded Budget Notification</option>
+<option value="Pending Budget Notification">Pending Budget Notification</option>
+<option value="Budget Rejection">Budget Rejection</option>
+<option value="Budget Reassignment">Budget Reassignment</option>
+<option value="Invoice in Client Review">Invoice in Client Review</option>
+<option value="Invoice Reassignment">Invoice Reassignment</option>
+<option value="Invoices in law firm review">Invoices in law firm review</option>
+<option value="Advanced Case Creation">Advanced Case Creation</option>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <x>Client</x>
+                        <br>
+                        <input class="inputText" type="text"> </input>
+                    </td>
+                    <td>
+                        <x>Client Division</x>
+                        <br>
+                        <input class="inputText" type="text"> </input>
+                    </td>
+                </tr>
+                <td>
+                      <x>Description</x>
+                        <br>
+                        <textarea class="inputText area" type="text"  rows="6" cols="50"> </textarea>
+                </td>
+                <td>
+                    <x>User Type</x>
+                    <br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Client Contact">Client Contact </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Client Contact">Client Reviewer
+                    </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Client Contact"> Law Firm Reviewer
+                    </input><br>
+                    <input style=" font-size: 14px;color:#405e7c;" type="checkbox" value="Client Contact">Law Firm User who Uploaded Invoice
+                    </input>
+
+                </td>
+
+                </tr>
+            </table>
+
+        </div>
     </div>
-    <div id="frequecy" class="tabcontent">
-    Test2
+    <div id="frequecy" class="tabcontent min">
+        Test2
     </div>
 </body>
 </html>

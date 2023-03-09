@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial;
 }
@@ -106,12 +105,12 @@ x {
 
 #quovant th {
     background: #009fdb;
-border-color: #0086f1;
-color: #fff;
-font-size: 1.1em;
-padding: 5px 10px;
-text-align: left;
-text-transform: none;
+    border-color: #0086f1;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    text-align: left;
+    text-transform: none;
 }
 
 #quovant {
@@ -119,17 +118,18 @@ text-transform: none;
     border-collapse: collapse;
     width: 100%;
     font-size: 13px;
-    background-color:#FAFAFB ;
+    background-color: #FAFAFB;
 }
 
-#quovant td{
+#quovant td {
     font-weight: normal;
-padding: 10px 10px;
-border: 1px solid #ebebeb;
-border-width: 1px 0 0 1px;
-color: #7489a0;
-text-align: left;
+    padding: 10px 10px;
+    border: 1px solid #ebebeb;
+    border-width: 1px 0 0 1px;
+    color: #7489a0;
+    text-align: left;
 }
+
 #quovant th {
     border: 1px solid #ddd;
     padding: 8px;
@@ -139,7 +139,7 @@ a {
     color: #009FDB;
 }
 
-.hollowButton{
+.hollowButton {
     background: transparent;
     border-width: 1px !important;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -147,4 +147,23 @@ a {
     font-weight: 600;
     height: 40pX;
     padding: 3px 25px;
+}
+
+.min {
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.newfrom {
+    background: #F5F8FB;
+}
+
+.checkboxLabel {
+    font-size: 14px;
+    color: #405e7c;
+}
+
+.area {
+    min-height: 120px;
 }
