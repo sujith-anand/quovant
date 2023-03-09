@@ -1,3 +1,8 @@
+
+function myFunction() {
+    defaultTab = document.getElementsByClassName("tabcontent")
+    tabcontent[i].style.display="block"
+  }
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
