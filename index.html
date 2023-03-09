@@ -14,9 +14,10 @@
             overflow: hidden;
             background-color: #ebecf1;
         }
-        x{
+
+        x {
             color: #405e7c;
-    font-size: 13px;
+            font-size: 13px;
         }
 
         /* Style the buttons inside the tab */
@@ -41,7 +42,7 @@
         /* Create an active/current tablink class */
 
         .tab button.active {
-                        border-bottom: #009fdb 2px solid;
+            border-bottom: #009fdb 2px solid;
 
         }
 
@@ -49,7 +50,7 @@
 
         .tabcontent {
             display: none;
-            
+
             border-top: none;
         }
 
@@ -91,37 +92,47 @@
             padding: 20px 10px;
             background: #dadce2;
         }
-        
 
-.tableContentPane{
-margin: 20px;
-    padding: 10px;
-    border: 1px solid #0000001a;
-    border-radius: 8px;
-}
 
-#quovant tr:nth-child(even){background-color: #f2f2f2;}
+        .tableContentPane {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #0000001a;
+            border-radius: 8px;
+        }
 
-#quovant tr:hover {background-color: #ddd;}
+        #quovant tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
 
-#quovant th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #009fdb;
-  color: white;
-}
+        #quovant tr:hover {
+            background-color: #ddd;
+        }
 
-#quovant {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+        #quovant th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #009fdb;
+            color: white;
+        }
 
-#quovant td, #quovant th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
+        #quovant {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 13px;
+        }
+
+        #quovant td,
+        #quovant th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        a {
+            color: #009FDB;
+        }
     </style>
 </head>
 
@@ -139,23 +150,28 @@ margin: 20px;
             <div class="filter">
                 <table>
                     <tr>
-                        <td> <x>Configuration Name</x>
+                        <td>
+                            <x>Configuration Name</x>
                             <br>
                             <input class="inputText" type="text"> </input>
                         </td>
-                        <td> <x>Client</x>
+                        <td>
+                            <x>Client</x>
                             <br>
                             <input class="inputText" type="text"> </input>
                         </td>
-                        <td> <x>Client Division</x>
+                        <td>
+                            <x>Client Division</x>
                             <br>
                             <input class="inputText" type="text"> </input>
                         </td>
-                        <td> <x>Created On</x>
+                        <td>
+                            <x>Created On</x>
                             <br>
                             <input class="inputText" type="date"> </input>
                         </td>
-                        <td> <x>Status</x>
+                        <td>
+                            <x>Status</x>
                             <br>
                             <select class="inputText" type="text">
                           <option value="Active">Active</option>
@@ -173,83 +189,237 @@ margin: 20px;
 
             </div>
 
-<div class="tableContentPane">
-    
-    <table>
-      <tr>
-       
-          <td> Filters Applied: </td>
-            <td> Filters Applied: </td>
-         
-      </tr>  
+            <div class="tableContentPane">
 
-      
-      <tr>
-          <td>          
-          Total Rows: 20<br>
-          Filtered Rows: 20</td>
+                <table>
+                    <tr>
 
-      </tr>
-    </table>
-    <table id="quovant">
-          <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Königlich Essen</td>
-    <td>Philip Cramer</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>North/South</td>
-    <td>Simon Crowther</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Paris spécialités</td>
-    <td>Marie Bertrand</td>
-    <td>France</td>
-  </tr>
-</table>
+                        <td> Filters Applied: </td>
+                        <td> Filters Applied: </td>
 
-</div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            Total Rows: 20<br> Filtered Rows: 20</td>
+
+                    </tr>
+                </table>
+                <table id="quovant">
+                    <tr>
+                        <th>Configuration Name</th>
+                        <th>Template</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Client</th>
+                        <th>Client Division</th>
+                        <th>Created on</th>
+                        <th>Created by</th>
+                    </tr>
+                    <tr>
+                        <td><a>Invoice Status Update</a></td>
+                        <td>Invoice Status Update</td>
+                        <td>Invoice Status Update for the client Amazon client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>Amazon</td>
+                        <td>Workers Comp</td>
+                        <td>02/12/2023</td>
+                        <td>Dolores Townsend</td>
+                    </tr>
+                    <tr>
+                        <td><a>Pending Exceeded Budget Notification</a></td>
+                        <td>Pending Exceeded Budget Notification</td>
+                        <td>Pending Exceeded Budget Notification for the client Petsmart client division General liability</td>
+                        <td>Active</td>
+                        <td>Petsmart</td>
+                        <td>General liability</td>
+                        <td>02/13/2023</td>
+                        <td>Dewitt Reid</td>
+                    </tr>
+                    <tr>
+                        <td><a>Pending Budget Notification</a></td>
+                        <td>Pending Budget Notification</td>
+                        <td>Pending Budget Notification for the client GM client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>GM</td>
+                        <td>Workers Comp</td>
+                        <td>02/14/2023</td>
+                        <td>Autumn Arias</td>
+                    </tr>
+                    <tr>
+                        <td><a>Budget Rejection</a></td>
+                        <td>Budget Rejection</td>
+                        <td>Budget Rejection for the client Amazon client division General liability</td>
+                        <td>Active</td>
+                        <td>Amazon</td>
+                        <td>General liability</td>
+                        <td>02/15/2023</td>
+                        <td>Buford Pratt</td>
+                    </tr>
+                    <tr>
+                        <td><a>Budget Reassignment</a></td>
+                        <td>Budget Reassignment</td>
+                        <td>Budget Reassignment for the client Petsmart client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>Petsmart</td>
+                        <td>Workers Comp</td>
+                        <td>02/16/2023</td>
+                        <td>Maggie Maxwell</td>
+                    </tr>
+                    <tr>
+                        <td><a>Invoice in Client Review</a></td>
+                        <td>Invoice in Client Review</td>
+                        <td>Invoice in Client Review for the client GM client division General liability</td>
+                        <td>Active</td>
+                        <td>GM</td>
+                        <td>General liability</td>
+                        <td>02/17/2023</td>
+                        <td>Alonso Ward</td>
+                    </tr>
+                    <tr>
+                        <td><a>Invoice Reassignment</a></td>
+                        <td>Invoice Reassignment</td>
+                        <td>Invoice Reassignment for the client Amazon client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>Amazon</td>
+                        <td>Workers Comp</td>
+                        <td>02/18/2023</td>
+                        <td>Arthur Marshall</td>
+                    </tr>
+                    <tr>
+                        <td><a>Invoices in law firm review</a></td>
+                        <td>Invoices in law firm review</td>
+                        <td>Invoices in law firm review for the client Petsmart client division General liability</td>
+                        <td>Active</td>
+                        <td>Petsmart</td>
+                        <td>General liability</td>
+                        <td>02/19/2023</td>
+                        <td>Tanya Ewing</td>
+                    </tr>
+                    <tr>
+                        <td><a>Advanced Case Creation</a></td>
+                        <td>Advanced Case Creation</td>
+                        <td>Advanced Case Creation for the client GM client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>GM</td>
+                        <td>Workers Comp</td>
+                        <td>02/20/2023</td>
+                        <td>Brant Jacobs</td>
+                    </tr>
+                    <tr>
+                        <td><a>Pending Exceeded Budget Notification</a></td>
+                        <td>Pending Exceeded Budget Notification</td>
+                        <td>Pending Exceeded Budget Notification for the client Amazon client division General liability</td>
+                        <td>Active</td>
+                        <td>Amazon</td>
+                        <td>General liability</td>
+                        <td>02/21/2023</td>
+                        <td>Elvis Henson</td>
+                    </tr>
+                    <tr>
+                        <td><a>Pending Budget Notification</a></td>
+                        <td>Pending Budget Notification</td>
+                        <td>Pending Budget Notification for the client Petsmart client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>Petsmart</td>
+                        <td>Workers Comp</td>
+                        <td>02/22/2023</td>
+                        <td>Alba Burton</td>
+                    </tr>
+                    <tr>
+                        <td><a>Budget Rejection</a></td>
+                        <td>Budget Rejection</td>
+                        <td>Budget Rejection for the client GM client division General liability</td>
+                        <td>Active</td>
+                        <td>GM</td>
+                        <td>General liability</td>
+                        <td>02/23/2023</td>
+                        <td>Filiberto Blanchard</td>
+                    </tr>
+                    <tr>
+                        <td><a>Budget Reassignment</a></td>
+                        <td>Budget Reassignment</td>
+                        <td>Budget Reassignment for the client Amazon client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>Amazon</td>
+                        <td>Workers Comp</td>
+                        <td>02/24/2023</td>
+                        <td>Malinda Blackburn</td>
+                    </tr>
+                    <tr>
+                        <td><a>Invoice in Client Review</a></td>
+                        <td>Invoice in Client Review</td>
+                        <td>Invoice in Client Review for the client Petsmart client division General liability</td>
+                        <td>Active</td>
+                        <td>Petsmart</td>
+                        <td>General liability</td>
+                        <td>02/25/2023</td>
+                        <td>Polly Durham</td>
+                    </tr>
+                    <tr>
+                        <td><a>Invoice Reassignment</a></td>
+                        <td>Invoice Reassignment</td>
+                        <td>Invoice Reassignment for the client GM client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>GM</td>
+                        <td>Workers Comp</td>
+                        <td>02/26/2023</td>
+                        <td>Jasmine Meyers</td>
+                    </tr>
+                    <tr>
+                        <td><a>Invoices in law firm review</a></td>
+                        <td>Invoices in law firm review</td>
+                        <td>Invoices in law firm review for the client Amazon client division General liability</td>
+                        <td>Active</td>
+                        <td>Amazon</td>
+                        <td>General liability</td>
+                        <td>02/27/2023</td>
+                        <td>Molly Waters</td>
+                    </tr>
+                    <tr>
+                        <td><a>Advanced Case Creation</a></td>
+                        <td>Advanced Case Creation</td>
+                        <td>Advanced Case Creation for the client Petsmart client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>Petsmart</td>
+                        <td>Workers Comp</td>
+                        <td>02/28/2023</td>
+                        <td>Buddy Duarte</td>
+                    </tr>
+                    <tr>
+                        <td><a>Pending Exceeded Budget Notification</a></td>
+                        <td>Pending Exceeded Budget Notification</td>
+                        <td>Pending Exceeded Budget Notification for the client GM client division General liability</td>
+                        <td>Active</td>
+                        <td>GM</td>
+                        <td>General liability</td>
+                        <td>03/01/2023</td>
+                        <td>Ahmad Ayers</td>
+                    </tr>
+                    <tr>
+                        <td><a>Pending Budget Notification</a></td>
+                        <td>Pending Budget Notification</td>
+                        <td>Pending Budget Notification for the client Amazon client division Workers Comp</td>
+                        <td>Active</td>
+                        <td>Amazon</td>
+                        <td>Workers Comp</td>
+                        <td>03/02/2023</td>
+                        <td>Raymundo Gill</td>
+                    </tr>
+                    <tr>
+                        <td><a>Budget Rejection</a></td>
+                        <td>Budget Rejection</td>
+                        <td>Budget Rejection for the client Petsmart client division General liability</td>
+                        <td>Active</td>
+                        <td>Petsmart</td>
+                        <td>General liability</td>
+                        <td>03/03/2023</td>
+                        <td>Harriett Curry</td>
+                    </tr>
+                </table>
+
+            </div>
 
         </div>
     </div>
