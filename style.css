@@ -43,7 +43,7 @@ x {
 /* Style the tab content */
 
 .tabcontent {
-    display: none;
+    display: block;
 
     border-top: none;
 }
