@@ -97,6 +97,12 @@ x {
 
 }
 
+.buttonBar{
+    
+        float: right;
+        padding: 20px 0 0 0;
+    
+}
 .filter {
     border-bottom: 2px solid #009FDB;
     padding: 20px 10px;
