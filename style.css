@@ -43,7 +43,7 @@ x {
 /* Style the tab content */
 
 .tabcontent {
-    display: block;
+    display: none;
 
     border-top: none;
 }
@@ -74,11 +74,27 @@ x {
 .primary {
     height: 40px;
     vertical-align: bottom;
-    background: #009FDB;
     border: none;
     color: white;
     min-width: 60px;
     border-radius: 4px;
+}
+.greenButton{
+    background: #269DA9 ;
+
+}
+
+.redButton{
+    background: #EF5C6E;
+
+}
+
+.yellowButton{
+    background: #E3A043
+}
+.infoButton{
+    background: #009FDB;
+
 }
 
 .filter {
