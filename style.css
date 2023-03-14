@@ -97,6 +97,10 @@ x {
 
 }
 
+.show{
+    display: block;
+}
+
 .buttonBar{
     
         float: right;
