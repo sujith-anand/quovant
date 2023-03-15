@@ -79,34 +79,37 @@ x {
     min-width: 60px;
     border-radius: 4px;
 }
-.greenButton{
-    background: #269DA9 ;
+
+.greenButton {
+    background: #269DA9;
 
 }
 
-.redButton{
+.redButton {
     background: #EF5C6E;
 
 }
 
-.yellowButton{
+.yellowButton {
     background: #E3A043
 }
-.infoButton{
+
+.infoButton {
     background: #009FDB;
 
 }
 
-.show{
+.show {
     display: block;
 }
 
-.buttonBar{
-    
-        float: right;
-        padding: 20px 0 0 0;
-    
+.buttonBar {
+
+    float: right;
+    padding: 20px 0 0 0;
+
 }
+
 .filter {
     border-bottom: 2px solid #009FDB;
     padding: 20px 10px;
@@ -194,11 +197,42 @@ a {
     min-height: 120px;
 }
 
-.newfromTable
-{
+.newfromTable {
     background: #F5F8FB;
     padding: 20px;
     width: 100%;
     border: 1px solid #EEEEEE;
     box-shadow: 2px 5px 8px 0px #eee;
+}
+
+.accordionHeader {
+    padding: 20px 28px;
+    font-size: 20px;
+    background: #e6e6e6;
+    color: #3e4a58;
+}
+
+.accordionContent {
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    background-color: #fefefe;
+    color: #0a0a0a;
+}
+.accordLabel{
+color: #8291a7;
+display: block;
+font-size: inherit;
+line-height: 16px;
+margin-bottom: 5px;
+text-transform: none;
+width: 30vw;
+padding: 10px 20px;
+}
+
+.accordContent{
+color: #405e7c;
+font-size: inherit;
+line-height: 16px;
+margin-bottom: 5px;
 }
