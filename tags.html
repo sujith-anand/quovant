@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tag Input Example</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .tag {
+      display: flex;
+      align-items: center;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .tag span {
+      margin-right: 5px;
+    }
+
+    .tag button {
+      background-color: transparent;
+      border: none;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .tag button:hover {
+      text-decoration: underline;
+    }
+
+    #user-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #user-list li {
+      cursor: pointer;
+      margin-bottom: 5px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #user-list li:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <label for="tag-input">Tags:</label>
+  <div id="tag-container">
+    <div class="tag">
+      <span>current user</span>
+    </div>
+   </div>
+
+  <h2>User List</h2>
+  <ul id="user-list">
+<li>katherine.harris99@example.com</li>
+<li>carol.garcia47@example.com</li>
+<li>samuel.jackson86@example.com</li>
+<li>danielle.coleman23@example.com</li>
+<li>robert.white79@example.com</li>
+<li>sharon.phillips61@example.com</li>
+<li>joseph.mitchell72@example.com</li>
+<li>tiffany.baker63@example.com</li>
+<li>stephen.murphy48@example.com</li>
+<li>angela.wilson56@example.com</li>
+<li>matthew.taylor15@example.com</li>
+<li>jennifer.anderson94@example.com</li>
+<li>christopher.martin23@example.com</li>
+<li>elizabeth.moore12@example.com</li>
+<li>james.hall57@example.com</li>
+<li>susan.thomas86@example.com</li>
+<li>david.clark27@example.com</li>
+<li>jessica.green34@example.com</li>
+<li>richard.robinson76@example.com</li>
+<li>amanda.wright55@example.com</li>
+<li>anthony.lee98@example.com</li>
+<li>mary.adams61@example.com</li>
+<li>michael.evans44@example.com</li>
+<li>kimberly.brown33@example.com</li>
+<li>kevin.jones77@example.com</li>
+<li>lisa.johnson89@example.com</li>
+<li>patrick.harris95@example.com</li>
+<li>julie.thompson73@example.com</li>
+<li>william.rodriguez47@example.com</li>
+<li>melissa.peterson68@example.com</li>
+<li>john.taylor22@example.com</li>
+<li>karen.martinez57@example.com</li>
+<li>paula.hall81@example.com</li>
+<li>brandon.mitchell29@example.com</li>
+<li>lauren.jackson92@example.com</li>
+<li>michael.brown82@example.com</li>
+<li>natalie.collins67@example.com</li>
+<li>daniel.ramirez78@example.com</li>
+<li>ashley.davis87@example.com</li>
+<li>mark.wilson63@example.com</li>
+<li>courtney.johnson59@example.com</li>
+<li>matthew.young99@example.com</li>
+<li>emily.scott94@example.com</li>
+<li>jason.miller21@example.com</li>
+<li>jessica.hernandez52@example.com</li>
+<li>brian.martin32@example.com</li>
+<li>kelly.hernandez25@example.com</li>
+<li>gary.gonzalez98@example.com</li>
+<li>samantha.robinson71@example.com</li>
+<li>jacob.wilson76@example.com<li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>$(document).ready(function() {
+  // Define the list of users
+  var users = ['katherine.harris99@example.com',
+'carol.garcia47@example.com',
+'samuel.jackson86@example.com',
+'danielle.coleman23@example.com',
+'robert.white79@example.com',
+'sharon.phillips61@example.com',
+'joseph.mitchell72@example.com',
+'tiffany.baker63@example.com',
+'stephen.murphy48@example.com',
+'angela.wilson56@example.com',
+'matthew.taylor15@example.com',
+'jennifer.anderson94@example.com',
+'christopher.martin23@example.com',
+'elizabeth.moore12@example.com',
+'james.hall57@example.com',
+'susan.thomas86@example.com',
+'david.clark27@example.com',
+'jessica.green34@example.com',
+'richard.robinson76@example.com',
+'amanda.wright55@example.com',
+'anthony.lee98@example.com',
+'mary.adams61@example.com',
+'michael.evans44@example.com',
+'kimberly.brown33@example.com',
+'kevin.jones77@example.com',
+'lisa.johnson89@example.com',
+'patrick.harris95@example.com',
+'julie.thompson73@example.com',
+'william.rodriguez47@example.com',
+'melissa.peterson68@example.com',
+'john.taylor22@example.com',
+'karen.martinez57@example.com',
+'paula.hall81@example.com',
+'brandon.mitchell29@example.com',
+'lauren.jackson92@example.com',
+'michael.brown82@example.com',
+'natalie.collins67@example.com',
+'daniel.ramirez78@example.com',
+'ashley.davis87@example.com',
+'mark.wilson63@example.com',
+'courtney.johnson59@example.com',
+'matthew.young99@example.com',
+'emily.scott94@example.com',
+'jason.miller21@example.com',
+'jessica.hernandez52@example.com',
+'brian.martin32@example.com',
+'kelly.hernandez25@example.com',
+'gary.gonzalez98@example.com',
+'samantha.robinson71@example.com',
+'jacob.wilson76@example.com'];
+
+  // Add click event listeners to the user list items
+  $('#user-list li').on('click', function() {
+    // Get the selected user
+    var user = $(this).text();
+
+    // Add the user as a tag
+    var newTag = $('<div class="tag"><span>' + user + '</span><button class="remove-tag">x</button></div>');
+    $('#tag-container').append(newTag);
+
+    // Clear the tag input
+    $('#tag-input').val('');
+  });
+
+  // Add keydown event listener to the tag input
+  $('#tag-input').on('keydown', function(event) {
+    // Get the tag input value
+    var tag = $(this).val();
+
+    // Check if the enter key was pressed
+    if (event.keyCode === 13 && tag !== '') {
+      // Create a new tag element
+      var newTag = $('<div class="tag"><span>' + tag + '</span><button class="remove-tag">x</button></div>');
+
+      // Add the new tag to the tag container
+      $('#tag-container').append(newTag);
+
+      // Clear the tag input
+      $('#tag-input').val('');
+    }
+  });
+
+  // Add click event listeners to the remove tag buttons
+  $(document).on('click', '.remove-tag', function() {
+    // Remove the tag from the tag container
+    $(this).parent('.tag').remove();
+  });
+});
+
+   </script>
+     
